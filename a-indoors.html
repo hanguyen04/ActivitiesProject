@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>im bored</title>
+  <link rel="stylesheet" href="mt.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+<body style="background-image: url(paperbg.jpg);" >
+
+<audio controls autoplay>
+  <source src="lofi.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<button class="home2" onclick="location.href = 'index.html';">HOME</button>
+
+<h2 class="large-padding"></h2>
+
+
+<div class="row">
+
+	<div class="three-columns">
+		<button class="pinkStar"></button>
+		<button class="bluePeace"></button>
+		<button class="yellowHeart"></button>
+		<div class="large-padding"></div>
+		<div id="cover">
+			<div class="square" ></div>
+			<p class="game" id="cover2" >click here to play <br>the snake game:)</p>
+			<button class="game-btn" onclick="hide()" >play</button>
+		</div>
+		<canvas width="320" height="320" id="game"></canvas>
+	</div>
+
+
+	<div class="three-columns">
+		<div class="moveUp">
+			<button onclick="showDivAI()" class="center-button button">generate idea</button>
+		    <h2 class="small-padding"></h2>
+		    <div id="ai" class="center generated" style="display:none;" ></div>
+		</div>
+	    <button class="purpleBear"></button>
+	    <button class="stickyNote"></button>
+	    <br>
+	    <p class="notes">use the web version for more functions</p>
+	</div>
+
+	
+	<div class="three-columns">
+		<button class="silverFlower"></button>
+		<button class="orangeHeart"></button>
+		<button class="blueBear"></button>
+		<div class="large-padding"></div>
+		<div class="form">
+		    <form id="my_form" onsubmit="return false;">
+		      <label class="label" >Note your ideas here<br></label>
+ 		      <br>
+ 	    	<textarea rows = "18" cols = "32" name = "description"></textarea><br>
+			  </form> 
+		</div>
+	</div>
+
+
+</div>
+
+ 
+<script src="mt.js"></script>
+<script src="snek.js"></script>
+<script type="text/javascript">
+	function hide() {
+	  var x = document.getElementById("cover");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+</script>
+
+</body>
+</html>

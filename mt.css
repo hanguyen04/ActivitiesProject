@@ -1,0 +1,406 @@
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+@font-face {
+	font-family: 'mogena';
+	src:url(Fonts/Mogena.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+
+h1{
+	font-family: mogena;
+	font-weight: 100;
+	font-size: 45px;
+}
+
+p{
+	font-family: courier new;
+	font-weight: 100;
+	font-size: 15px;
+}
+
+.center{
+  	text-align: center;
+}
+
+.top-padding {
+	margin-top: 100px;
+}
+
+button{
+	background: black;
+	color: white;
+	border: none;
+	padding: 15px 32px;
+	display: inline-block;
+	font-family: courier new;
+	font-size: 17px;
+}
+
+.center-button{
+  	display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.button:hover {
+	transition-duration: 0.4s;
+ 	background-color: white;
+  	color: black;
+  	border: 2px solid black;
+}
+
+.medium-padding{
+	margin-top: 70px;
+}
+
+.large-padding{
+	margin-top: 200px;
+}
+
+.row{
+	display: flex;
+ 	flex-wrap: wrap;
+ 	margin-right: 5em;
+ 	margin-left: 5em;
+}
+
+.two-columns { 
+ 	flex: 50%;	
+}
+
+.three-columns { 
+ 	flex: 30%;	
+}
+
+.generated {
+	font-family: courier new;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.row{
+	 	flex-wrap: wrap;
+	 	display: block;
+	}
+
+	.two-columns { 
+ 		margin-bottom: 30px;
+	}
+	h1{
+		font-size: 38px;
+	}
+
+	p{
+		font-size: 20px !important;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	button{
+		padding: 12px 25px;
+		font-size: 18px;
+	}
+	.generated {
+		font-size: 20px;
+	}
+
+	.game , .game-btn, canvas, .square, audio  {
+		display: none;
+	}
+
+	.pinkStar, .yellowHeart, .bluePeace, .blueBear, .purpleBear, .stickyNote, label, textarea {
+		display: none !important;
+	}
+
+	.home1{
+		margin-left: 20px !important;
+	}
+
+	.home2{
+		margin-left: 20px !important;
+	}
+
+	.silverFlower{
+		transform: translate(170px, -300px) !important;
+		z-index: -10;
+	}
+
+	.orangeHeart{
+		transform: translate(-90px, -180px) !important;
+		z-index: -10;
+	}
+
+	.top-padding {
+		margin-top: 70px;
+	}
+
+	.notes{
+	display: block !important;
+	font-size: 15px;
+}
+
+
+}
+
+audio {
+	margin-top: 20px;
+	float: right;
+	width: 20%;
+	margin-right: 20px;
+	padding: blue 15px 32px;
+	filter:  contrast(100%) invert(100%);
+}
+
+.home1{
+	display: inline-block;
+	margin-top: 12px;
+	float: left;
+	margin-left: 50px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 30px 30px;
+	background-color: Transparent;
+	color: black;
+	font-family: mogena;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.home2{
+	display: inline-block;
+	margin-top: 8px;
+	float: left;
+	margin-left: 50px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 30px 30px;
+	background-color: Transparent;
+	color: black;
+	font-family: mogena;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.easterEgg{
+	transform: translate(530px, 5px);
+	padding: 40px 80px;
+	background-color: transparent;
+}
+
+
+.label {
+	font-family: courier new;
+	font-size: 15px;
+	margin-top: -60px;
+	position: static;
+}
+
+label{
+	float: right;
+	margin-right: 70px;
+	margin-top:10px;
+}
+
+textarea{
+	float: right;
+	margin-right: 20px;
+}
+
+.textarea{
+	margin-top: -30px;
+}
+
+canvas {
+	border: 1px solid black;
+	margin-left:0px;
+	margin-top:-70px;
+}
+
+
+.square {
+	width: 322px;
+	height: 322px;
+	background: white;
+	z-index: 2;
+	position: absolute;
+	margin-left:0px;
+	margin-top:-70px;
+}
+
+.game{
+	z-index: 3;
+	position: absolute;
+	margin-left:70px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.game-btn{
+	z-index: 3;
+	position: absolute;
+	align-self: center;
+	margin-top:120px;
+	margin-left:100px;
+}
+
+textarea{
+	margin-top: -30px;
+}
+
+
+.stickeyNote{
+	position: absolute;
+	width: 100px;
+	height: auto;
+}
+
+img {
+  border-radius: 8px;
+}
+
+
+.stickyNote{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(stickyNote.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 180px 160px;
+	background-color: Transparent;
+}
+
+.pinkStar{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(pinkStar.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 50px 80px;
+	background-color: Transparent;
+	z-index: 20;
+	position: absolute;
+	transform: translate(-30px, -70px) rotate(-10deg);
+}
+
+.purpleBear{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(purpleBear.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 70px 58px;
+	background-color: Transparent;
+	z-index: 20;
+	position: absolute;
+	transform: translate(250px, 170px);
+}
+
+.bluePeace{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(bluePeace.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 35px 35px;
+	background-color: Transparent;
+	z-index: 20;
+	position: absolute;
+	transform: translate(180px, -20px);
+}
+
+.yellowHeart{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(yellowHeart.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 35px 35px;
+	background-color: Transparent;
+	z-index: 20;
+	position: absolute;
+	transform: translate(90px, 10px);
+}
+
+.blueBear{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(blueBear.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 70px 58px;
+	background-color: Transparent;
+	z-index: 20;
+	position: absolute;
+	transform: translate(230px, -50px);
+}
+
+.silverFlower{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(silverFlower.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 35px 35px;
+	background-color: Transparent;
+	z-index: 20;
+	position: absolute;
+	transform: translate(130px, -80px);
+}
+
+.orangeHeart{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: url(orangeHeart.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 35px 40px;
+	background-color: Transparent;
+	z-index: 20;
+	position: absolute;
+	transform: translate(70px, 10px);
+}
+
+.moveUp{
+	margin-top:-70px;
+	margin-bottom:40px;
+}
+
+
+.small-padding{
+	margin-top: 65px;
+}
+
+
+.notes{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
